@@ -1,5 +1,5 @@
 # automation-intern-repro
 
-Welcome to my QA Testing Portfolio.
+Welcome to my Software Testing Portfolio.
 
-This project demonstrates my Git and testing skills.
+This project demonstrates my automation testing skills.
