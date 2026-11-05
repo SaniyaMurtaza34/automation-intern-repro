@@ -1,3 +1,3 @@
 # automation-intern-repro
 
-Welcome to my Software Quality Engineering Github.
+Welcome to my QA Automation Testing Reprository.
