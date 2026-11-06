@@ -24,5 +24,6 @@ F9	Toggle breakpoint
 # Terminal Commands
 
 Shortcut	Action
-Ctrl + `	Open or close integrated terminal
-Ctrl + Shift + `	Creat new Terminal
+Ctrl + `	Open or close integrated terminal.
+
+Ctrl+ Shift + `	Create new Terminal
