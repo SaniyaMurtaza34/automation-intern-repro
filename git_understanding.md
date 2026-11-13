@@ -32,3 +32,42 @@ A few things I learned from this experience:
 - It's important to review the final file after resolving a conflict to make sure nothing useful has been lost.
 
 Overall, I found this exercise helpful because I was able to create and resolve a merge conflict myself rather than just reading about how it works. It also reminded me that, as a QA Engineer, reviewing changes carefully is important to maintain software quality and avoid introducing unexpected issues.
+
+
+# Understanding Git Staging and Committing
+
+## 1. What is the difference between staging and committing?
+
+While learning Git, I understood that staging and committing are two different steps in managing changes in a project.
+
+**Staging** means selecting the changes I want to include in my next commit. It allows me to prepare specific files or changes before saving them to the repository's history. I can use `git add <file>` to stage a file.
+
+**Committing** means saving the staged changes as a snapshot in Git's history. I can use `git commit -m "commit message"` to record those changes.
+
+In simple terms, staging is preparing my changes, while committing is saving those selected changes in the project's history.
+
+## 2. Why does Git separate these two steps?
+
+Git separates staging and committing to give developers more control over their work.
+
+It allows me to review my changes before committing them and decide exactly which files or updates should be included. It also helps keep commits organised by grouping related changes together instead of committing everything at once.
+
+This makes the project history easier to understand and maintain.
+
+## 3. When would I want to stage changes without committing?
+
+I might want to stage changes without committing when I am not ready to save them in the repository's history.
+
+For example:
+- When I want to review my changes before committing.
+- When I have modified multiple files but only want to commit one specific file.
+- When I want to separate different tasks into individual commits.
+- When I have finished one part of a feature but am still working on other changes.
+
+Staging gives me the flexibility to prepare and organise my work before creating a commit.
+
+## 4. What I Learned
+
+Through this exercise, I learned how staging and committing work together in Git. I also understood that staging does not permanently save changes in the commit history. It simply prepares them for the next commit.
+
+This practical experience helped me understand how to manage changes more carefully, review my work and maintain a clean Git history.
