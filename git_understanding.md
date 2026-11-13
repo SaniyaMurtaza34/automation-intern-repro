@@ -66,8 +66,40 @@ For example:
 
 Staging gives me the flexibility to prepare and organise my work before creating a commit.
 
-## 4. What I Learned
+## 4. Practical Staging and Committing Experiment
 
-Through this exercise, I learned how staging and committing work together in Git. I also understood that staging does not permanently save changes in the commit history. It simply prepares them for the next commit.
+To understand how staging and committing work in practice, I used the terminal and experimented with the Git commands.
 
-This practical experience helped me understand how to manage changes more carefully, review my work and maintain a clean Git history.
+Here are the steps I followed:
+
+**1. Modified a file**
+
+I made changes to my existing `git_understanding.md` file and saved it.
+
+**2. Staged the file**
+
+I used the following command: `git add git_understanding.md`
+This added my modified file to the staging area.
+
+**3. Checked the Git status**
+
+I ran: `git status`
+Git showed `git_understanding.md` under **Changes to be committed**, confirming that the file was successfully staged.
+
+**4. Unstaged the file**
+
+Next, I used: `git reset HEAD git_understanding.md `
+After checking `git status` again, the file appeared under **Changes not staged for commit**. This helped me understand that unstaging removes a file from the staging area without deleting my actual changes.
+
+**5. Staged and committed the file**
+
+I added the file again and committed it: `git add git_understanding.md`, `git commit -m "Update Git staging and committing notes" `
+After committing, Git confirmed that the commit was created successfully. When I ran `git status` again, it showed that my working tree was clean.
+
+**What I observed:**
+
+Through this experiment, I understood the difference between modified, staged and committed changes. I also learned that I can move changes out of the staging area without losing my work. Once committed, the changes become part of Git's commit history.
+
+## 5. What I Learned
+
+Through this exercise, I learned how staging and committing work together in Git. I also understood that staging does not permanently save changes in the commit history. It simply prepares them for the next commit. This practical experience helped me understand how to manage changes more carefully, review my work and maintain a clean Git history.
