@@ -139,3 +139,35 @@ What surprised me most was that `git cherry-pick` allows me to select just one c
 Another thing I learned is that `git checkout main -- <file>` can restore a specific file without affecting other files in my working directory. This is particularly helpful when working on multiple changes at the same time.
 
 Overall, this exercise helped me understand how Git can be used to manage changes, investigate issues and collaborate more confidently with other developers in a long-running project.
+
+
+
+# Git Understanding – Git Bisect
+
+## 1. What does `git bisect` do?
+
+Git Bisect is a useful debugging tool that helps identify the exact commit that introduced a bug into a project. It works using a binary search approach, comparing good and bad commits to narrow down the issue.
+
+Instead of manually checking every commit, Git selects commits in between and helps locate the problematic change much faster.
+
+## 2. When would you use it in a real-world debugging situation?
+
+I would use Git Bisect when an application was working correctly before, but after several updates or releases, I noticed unexpected behaviour or a new bug.
+
+For example, if a feature was working in an earlier version but stopped working after multiple commits, I could use Git Bisect to identify which commit introduced the issue.
+
+This would help me investigate the root cause, understand what changed, and work with the development team to resolve the problem.
+
+## 3. How does it compare to manually reviewing commits?
+
+Before learning about Git Bisect, I would normally consider reviewing commits one by one to identify where something went wrong. However, this can take a lot of time, especially in projects with many changes.
+
+Git Bisect makes this process more efficient by using binary search to narrow down the possible commits. It reduces unnecessary investigation and helps identify the problematic change faster.
+
+## 4. My Learning Reflection
+
+During this exercise, I learned how Git Bisect can be used as part of a debugging process. I created multiple commits in a test repository, intentionally introduced a bug, and experimented with identifying the commit responsible for it.
+
+As a QA engineer, I found this particularly useful because identifying when a defect was introduced can help with root cause analysis and make communication with developers more effective.
+
+Overall, this exercise helped me understand that Git is not only useful for version control but also provides practical tools for investigating and resolving software defects.
