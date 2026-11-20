@@ -1,2 +1,3 @@
 Application is working correctly
 Login feature added
+Dashboard feature added
