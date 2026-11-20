@@ -171,3 +171,39 @@ During this exercise, I learned how Git Bisect can be used as part of a debuggin
 As a QA engineer, I found this particularly useful because identifying when a defect was introduced can help with root cause analysis and make communication with developers more effective.
 
 Overall, this exercise helped me understand that Git is not only useful for version control but also provides practical tools for investigating and resolving software defects.
+
+
+# Understanding Git Commit Messages
+
+## 1. What makes a good commit message?
+
+After exploring Git commit histories and learning about commit message best practices, I realised that a good commit message should be clear, meaningful and easy to understand.
+
+It should briefly explain what has been changed and why the change was necessary. Using action words such as Add, Fix, Update and Remove makes messages easier to understand.
+
+I also learned that commit messages should not be too vague or unnecessarily long. A short but meaningful message helps other developers understand the purpose of a change without having to review the entire code.
+
+## 2. How does a clear commit message help in team collaboration?
+
+Clear commit messages make communication between team members easier. When multiple developers work on the same project, everyone needs to understand what changes have been made.
+
+For example, if a developer commits a bug fix with a message like `fix: correct login validation`, another team member can quickly understand the purpose of that commit.
+
+It also makes code reviews, debugging and tracking changes easier. Good commit messages help the whole team stay organised and reduce confusion.
+
+## 3. How can poor commit messages cause issues later?
+
+Poor commit messages can create confusion, especially when developers need to investigate an old bug or understand why a particular change was introduced.
+
+For example, a message like `fixed stuff` does not provide enough information about what was fixed. Developers may need to open multiple files or compare changes just to understand the purpose of that commit.
+
+Overly detailed messages can also make the commit history difficult to read because important information gets lost in unnecessary explanations.
+
+## 4. What I learned from this exercise
+
+During this exercise, I practised writing three different types of commit messages: vague, overly detailed and well-structured.
+
+I noticed that the quality of a commit message makes a big difference when reviewing project history. The well-structured message was much easier to understand because it explained the change clearly without adding unnecessary information.
+
+Going forward, I will try to write meaningful commit messages that describe the actual changes I make. I understand that good commit messages are not just a Git convention; they are also an important part of professional development and effective teamwork.
+
