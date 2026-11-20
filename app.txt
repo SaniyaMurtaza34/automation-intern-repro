@@ -2,3 +2,4 @@ Application is working correctly
 Login feature added
 Dashboard feature added
 BUG: Incorrect application behaviour
+Profile feature added
