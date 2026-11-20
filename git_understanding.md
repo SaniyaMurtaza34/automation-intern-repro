@@ -207,3 +207,16 @@ I noticed that the quality of a commit message makes a big difference when revie
 
 Going forward, I will try to write meaningful commit messages that describe the actual changes I make. I understand that good commit messages are not just a Git convention; they are also an important part of professional development and effective teamwork.
 
+# My Understanding of Git Pull Requests
+
+### 1. Why are PRs important in a team workflow?
+
+As a beginner, I learned that Pull Requests help developers work together without directly changing the main branch. They give team members an opportunity to review changes, identify possible bugs and provide feedback before the changes are merged. This helps maintain software quality and makes teamwork easier.
+
+### 2. What makes a well-structured PR?
+
+A good PR should have a clear title and description explaining what was changed and why. It should contain only relevant changes, include related issue links when applicable, and provide screenshots or testing results if needed. This makes it easier for other developers to understand and review the changes.
+
+### 3. What did I learn from reviewing an open-source PR?
+
+By reviewing an open-source PR, I learned how developers communicate through comments, share suggestions and request changes. I understood that code reviews are an important part of software development because they help identify problems and improve code quality before merging changes.
