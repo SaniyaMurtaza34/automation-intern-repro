@@ -1,1 +1,2 @@
 Learning Git commit messages
+Practising clear commit messages
