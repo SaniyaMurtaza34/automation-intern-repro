@@ -101,7 +101,7 @@ Yes, formatting the code made it easier to read and understand. Prettier helped 
 I learned how ESLint and Prettier work together to improve code quality. I also reviewed the Airbnb JavaScript Style Guide and understood how following consistent coding standards can make collaboration and code maintenance easier.
 
 
-### Clean Code: Meaningful Variable and Function Names
+# Clean Code: Meaningful Variable and Function Names
 
 I researched clean code naming practices and learned that variable and function names should be clear, meaningful, and easy to understand. A good name should explain the purpose of the variable or function without requiring someone to read the entire code to understand it.
 
