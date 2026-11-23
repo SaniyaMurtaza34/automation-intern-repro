@@ -8,10 +8,10 @@
 
 ## 1. Where and when I will work
 
-| Period | Location | Time zone | Working hours (Monday–Friday) | Weekly working hours |
-|---|---|---|---|---:|
-| Weeks 1–4 (first month) | Home, Melbourne, Australia | Melbourne local time (AEDT/AEST) | 9:00 AM–5:30 PM | 40 |
-| Weeks 5–12 (remaining two months) | Home, Pakistan | Pakistan Standard Time (PKT) | 9:00 AM–5:30 PM | 40 |
+| Period                            | Location                   | Time zone                        | Working hours (Monday–Friday) | Weekly working hours |
+| --------------------------------- | -------------------------- | -------------------------------- | ----------------------------- | -------------------: |
+| Weeks 1–4 (first month)           | Home, Melbourne, Australia | Melbourne local time (AEDT/AEST) | 9:00 AM–5:30 PM               |                   40 |
+| Weeks 5–12 (remaining two months) | Home, Pakistan             | Pakistan Standard Time (PKT)     | 9:00 AM–5:30 PM               |                   40 |
 
 All times are **local to the place where I am working**. Melbourne changes between AEDT and AEST depending on the date; Pakistan stays on PKT (UTC+5). I will confirm meeting times with my supervisor when changing locations.
 
@@ -19,15 +19,15 @@ All times are **local to the place where I am working**. Melbourne changes betwe
 
 This is my planned schedule for **every Monday, Tuesday, Wednesday, Thursday and Friday**:
 
-| Time (local) | Activity | Counted as work? |
-|---|---|---|
-| 9:00–9:15 AM | Check tasks, plan the day and start a Focus Bear session | Yes (15 min) |
-| 9:15–11:00 AM | Work on onboarding tasks, learning or coding | Yes (1 hr 45 min) |
-| 11:00 AM–1:00 PM | Continue assigned tasks, testing and practice | Yes (2 hrs) |
-| 1:00–1:30 PM | Lunch break | **No (30 min)** |
-| 1:30–3:30 PM | Work on assigned tasks and practical exercises | Yes (2 hrs) |
-| 3:30–5:15 PM | Continue tasks, reviews or team collaboration | Yes (1 hr 45 min) |
-| 5:15–5:30 PM | Record progress, update GitHub and plan next steps | Yes (15 min) |
+| Time (local)     | Activity                                                 | Counted as work?  |
+| ---------------- | -------------------------------------------------------- | ----------------- |
+| 9:00–9:15 AM     | Check tasks, plan the day and start a Focus Bear session | Yes (15 min)      |
+| 9:15–11:00 AM    | Work on onboarding tasks, learning or coding             | Yes (1 hr 45 min) |
+| 11:00 AM–1:00 PM | Continue assigned tasks, testing and practice            | Yes (2 hrs)       |
+| 1:00–1:30 PM     | Lunch break                                              | **No (30 min)**   |
+| 1:30–3:30 PM     | Work on assigned tasks and practical exercises           | Yes (2 hrs)       |
+| 3:30–5:15 PM     | Continue tasks, reviews or team collaboration            | Yes (1 hr 45 min) |
+| 5:15–5:30 PM     | Record progress, update GitHub and plan next steps       | Yes (15 min)      |
 
 **Daily calculation:** 9:00 AM–5:30 PM = 8.5 hours present, minus 0.5-hour lunch = **8 working hours**.  
 **Weekly calculation:** 8 hours × 5 days = **40 working hours**.  
@@ -37,20 +37,20 @@ Short rest breaks will be taken as needed and tracked according to Focus Bear's 
 
 These activities are **proposed** based on the Focus Bear onboarding milestones. I will follow the actual GitHub issue instructions and my supervisor's priorities if they differ.
 
-| Week | Location | Planned work | Weekly hours | Total hours so far |
-|---|---|---|---:|---:|
-| 1 | Melbourne | Read company policies, understand internship expectations, learn Agile ways of working | 40 | 40 |
-| 2 | Melbourne | Learn about Focus Bear, set learning goals, attend meetings and complete related onboarding issues | 40 | 80 |
-| 3 | Melbourne | Set up Focus Bear, GitHub, Git, VS Code and testing tools; check that the environment works | 40 | 120 |
-| 4 | Melbourne | Practise Git: branches, commits, pull requests, code review and meaningful commit messages | 40 | 160 |
-| 5 | Pakistan | Study clean-code principles, naming, readable code and coding standards | 40 | 200 |
-| 6 | Pakistan | Practise refactoring, improve code readability and complete clean-code exercises | 40 | 240 |
-| 7 | Pakistan | Learn end-to-end (E2E) testing basics, test structure, selectors and assertions | 40 | 280 |
-| 8 | Pakistan | Write, run and review automated E2E tests; record results and fix simple issues | 40 | 320 |
-| 9 | Pakistan | Extend E2E tests, improve reliability, and work on assigned automation issues | 40 | 360 |
-| 10 | Pakistan | Debug failing tests, investigate errors and practise troubleshooting | 40 | 400 |
-| 11 | Pakistan | Complete remaining onboarding issues, improve test code and address feedback | 40 | 440 |
-| 12 | Pakistan | Finish outstanding work, review learning goals, organise evidence and submit final updates | 40 | **480** |
+| Week | Location  | Planned work                                                                                       | Weekly hours | Total hours so far |
+| ---- | --------- | -------------------------------------------------------------------------------------------------- | -----------: | -----------------: |
+| 1    | Melbourne | Read company policies, understand internship expectations, learn Agile ways of working             |           40 |                 40 |
+| 2    | Melbourne | Learn about Focus Bear, set learning goals, attend meetings and complete related onboarding issues |           40 |                 80 |
+| 3    | Melbourne | Set up Focus Bear, GitHub, Git, VS Code and testing tools; check that the environment works        |           40 |                120 |
+| 4    | Melbourne | Practise Git: branches, commits, pull requests, code review and meaningful commit messages         |           40 |                160 |
+| 5    | Pakistan  | Study clean-code principles, naming, readable code and coding standards                            |           40 |                200 |
+| 6    | Pakistan  | Practise refactoring, improve code readability and complete clean-code exercises                   |           40 |                240 |
+| 7    | Pakistan  | Learn end-to-end (E2E) testing basics, test structure, selectors and assertions                    |           40 |                280 |
+| 8    | Pakistan  | Write, run and review automated E2E tests; record results and fix simple issues                    |           40 |                320 |
+| 9    | Pakistan  | Extend E2E tests, improve reliability, and work on assigned automation issues                      |           40 |                360 |
+| 10   | Pakistan  | Debug failing tests, investigate errors and practise troubleshooting                               |           40 |                400 |
+| 11   | Pakistan  | Complete remaining onboarding issues, improve test code and address feedback                       |           40 |                440 |
+| 12   | Pakistan  | Finish outstanding work, review learning goals, organise evidence and submit final updates         |           40 |            **480** |
 
 ### How I will organise each week
 
@@ -85,7 +85,6 @@ I will attend scheduled team meetings during these hours when possible and adjus
 - Remote work from **Melbourne for weeks 1–4** and **Pakistan for weeks 5–12** is permitted.
 - The start date, end date, holidays, meeting times, and any specific break or time-recording rules will be confirmed with my supervisor.
 - The week-by-week tasks are estimates; actual work will follow the assigned onboarding issues and supervisor instructions.
-
 
 ## 4. My Commitment
 

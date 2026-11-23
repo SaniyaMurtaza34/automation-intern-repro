@@ -33,7 +33,6 @@ A few things I learned from this experience:
 
 Overall, I found this exercise helpful because I was able to create and resolve a merge conflict myself rather than just reading about how it works. It also reminded me that, as a QA Engineer, reviewing changes carefully is important to maintain software quality and avoid introducing unexpected issues.
 
-
 # Understanding Git Staging and Committing
 
 ## 1. What is the difference between staging and committing?
@@ -59,6 +58,7 @@ This makes the project history easier to understand and maintain.
 I might want to stage changes without committing when I am not ready to save them in the repository's history.
 
 For example:
+
 - When I want to review my changes before committing.
 - When I have modified multiple files but only want to commit one specific file.
 - When I want to separate different tasks into individual commits.
@@ -104,21 +104,24 @@ Through this experiment, I understood the difference between modified, staged an
 
 Through this exercise, I learned how staging and committing work together in Git. I also understood that staging does not permanently save changes in the commit history. It simply prepares them for the next commit. This practical experience helped me understand how to manage changes more carefully, review my work and maintain a clean Git history.
 
-
 # Git Commands – Learning and Practical Reflection
 
 ## 1. What Does Each Command Do?
 
 ### `git checkout main -- <file>`
+
 This command allows me to restore a specific file from the `main` branch without affecting other files or changes in my current branch. I learned that it is useful when I accidentally modify a file and want to bring back its original version.
 
 ### `git cherry-pick <commit>`
+
 This command allows me to take a specific commit from another branch and apply it to my current branch. It is useful when I need a particular fix or feature without merging all the changes from that branch.
 
 ### `git log`
+
 This command displays the commit history of a repository. It helps me understand what changes were made, when they were made, and who made them. I can also use it to find a specific commit when working on an issue.
 
 ### `git blame <file>`
+
 This command shows who last modified each line of a file and the corresponding commit information. It helps me understand the history of a particular section of code and makes it easier to investigate issues.
 
 ## 2. When Would I Use These Commands in a Real Project?
@@ -139,8 +142,6 @@ What surprised me most was that `git cherry-pick` allows me to select just one c
 Another thing I learned is that `git checkout main -- <file>` can restore a specific file without affecting other files in my working directory. This is particularly helpful when working on multiple changes at the same time.
 
 Overall, this exercise helped me understand how Git can be used to manage changes, investigate issues and collaborate more confidently with other developers in a long-running project.
-
-
 
 # Git Understanding – Git Bisect
 
@@ -171,7 +172,6 @@ During this exercise, I learned how Git Bisect can be used as part of a debuggin
 As a QA engineer, I found this particularly useful because identifying when a defect was introduced can help with root cause analysis and make communication with developers more effective.
 
 Overall, this exercise helped me understand that Git is not only useful for version control but also provides practical tools for investigating and resolving software defects.
-
 
 # Understanding Git Commit Messages
 

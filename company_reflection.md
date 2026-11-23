@@ -16,7 +16,6 @@ I think this mission is important because everyone is different. We all have our
 
 I find Focus Bear's mission meaningful because it goes beyond just building software; it focuses on understanding people's different needs and helping them improve their everyday lives. I am particularly interested in learning how accessibility and thoughtful design can make technology more inclusive. I also see this as an opportunity to grow my understanding of how software can support people in their daily routines, focus, and productivity.
 
-
 ## 5. Do you personally relate to any of the challenges that Focus Bear aims to solve?
 
 Yes, I can relate to some of these challenges. Sometimes, managing multiple tasks, maintaining focus, and balancing learning with daily responsibilities can be challenging. I have realised that having a clear plan, setting priorities, and following a consistent routine can make a big difference. This also helps me understand why tools like Focus Bear can be valuable for people who need extra support with focus and organisation.

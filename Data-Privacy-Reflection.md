@@ -14,8 +14,6 @@ My key takeaways are:
 - Users have rights to access, correct, or request deletion of their personal information.
 - Focus Bear follows GDPR privacy principles and uses third-party service providers to support its services.
 
-
-
 ### 2. What types of data are considered confidential at Focus Bear?
 
 I understand that confidential information can include:
@@ -43,7 +41,6 @@ Some important practices I would follow are:
 ### 4. How should you respond to a suspected data breach?
 
 If I notice a possible data breach or accidentally share confidential information, I would report it immediately to my supervisor or the appropriate security contact. I would explain what happened, what information may have been exposed, and when the incident occurred. I would also follow the company's instructions to contain the issue, preserve relevant evidence, and avoid trying to hide the mistake.
-
 
 ## Reflection
 

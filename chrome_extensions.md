@@ -14,6 +14,6 @@ I set up Google Chrome and explored a few useful browser extensions that can mak
 
 ## What Was the Most Useful Thing I Learned?
 
-The most useful thing I learned was how these browser extensions can make debugging and testing more efficient. As a QA Engineer, I usually focus on identifying issues from a user's perspective. However, exploring these tools helped me understand what happens behind the scenes, especially how React components work, how application state changes, and how API responses are structured. I also learned that Lighthouse can help identify performance and accessibility issues that might affect the overall user experience. 
+The most useful thing I learned was how these browser extensions can make debugging and testing more efficient. As a QA Engineer, I usually focus on identifying issues from a user's perspective. However, exploring these tools helped me understand what happens behind the scenes, especially how React components work, how application state changes, and how API responses are structured. I also learned that Lighthouse can help identify performance and accessibility issues that might affect the overall user experience.
 
 Overall, this setup has given me a better understanding of browser-based debugging and will help me investigate issues more effectively during testing.

@@ -41,7 +41,7 @@ As a QA professional, I believe Agile principles can help me work more closely w
 
 ### 1. Summarize the main differences between Scrum and Kanban in your own words.
 
-Scrum and Kanban both help teams organise work and deliver better results, but they manage work differently. 
+Scrum and Kanban both help teams organise work and deliver better results, but they manage work differently.
 
 Scrum uses fixed-length sprints, with the team deciding what to complete during each sprint. It has defined roles and regular meetings to help the team plan, review progress, and improve.
 

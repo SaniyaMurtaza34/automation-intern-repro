@@ -59,14 +59,14 @@ This approach will help me stay organised, manage my time better, and make my wo
 
 I would create a Kanban board for my repository with the following columns:
 
-| Column | Purpose |
-|---|---|
-| Not Started | Tasks that are waiting to be started. |
-| In Progress | Tasks that I am currently working on. |
-| Blocked | Tasks that cannot continue because of an issue or dependency. |
-| Ready for Review | Tasks that are completed and waiting for review. |
-| Approved by Bot | Tasks that have passed the required automated checks. |
-| Done | Tasks that have been completed and meet the acceptance criteria. |
+| Column           | Purpose                                                          |
+| ---------------- | ---------------------------------------------------------------- |
+| Not Started      | Tasks that are waiting to be started.                            |
+| In Progress      | Tasks that I am currently working on.                            |
+| Blocked          | Tasks that cannot continue because of an issue or dependency.    |
+| Ready for Review | Tasks that are completed and waiting for review.                 |
+| Approved by Bot  | Tasks that have passed the required automated checks.            |
+| Done             | Tasks that have been completed and meet the acceptance criteria. |
 
 ### 2. Move at least one task through the Kanban process
 
@@ -80,7 +80,7 @@ If I encounter an issue, such as a failing test caused by an application bug, I 
 
 I would only move the task to the next stage when it meets the requirements for that stage. I would also update the board with comments or relevant details so the team can follow my progress.
 
-*Note: This is an example workflow. I would update the actual repository board as I complete the task.*
+_Note: This is an example workflow. I would update the actual repository board as I complete the task._
 
 ### 3. Identify one way to improve task tracking in my role
 

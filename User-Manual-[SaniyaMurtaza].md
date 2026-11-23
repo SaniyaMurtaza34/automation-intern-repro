@@ -8,7 +8,6 @@ A “User Manual for Me” is a personal guide that explains how someone prefers
 
 I believe I do my best work when expectations are clear and communication is open. I prefer friendly, direct messages and appreciate constructive feedback that helps me improve. Having organised tasks and uninterrupted focus time helps me stay productive. I also understand that everyone has a different working style, so I try to be flexible, respectful, and open to learning from others.
 
-
 # User Manual for Saniya Murtaza
 
 ## My Role

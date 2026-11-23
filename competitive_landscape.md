@@ -22,8 +22,6 @@ Focus Bear combines distraction blocking with morning and evening routines, guid
 
 I particularly like that Focus Bear guides users through one step at a time rather than showing them too many tasks at once. This can make daily activities feel less overwhelming.
 
-
-
 ### 2. If I were a user, why would I choose Focus Bear over competitors?
 
 If I were choosing a productivity app, I would choose Focus Bear because it offers more than just distraction blocking.
@@ -34,8 +32,6 @@ Another reason is its approach to supporting people with ADHD and autism. The gu
 
 For me, the biggest advantage is having one app that supports both productivity and a healthier daily routine.
 
-
-
 ### 3. What's one feature that other apps have that Focus Bear doesn't?
 
 One feature I found interesting is Tiimo's AI Co-Planner and visual daily schedule.
@@ -45,8 +41,6 @@ Tiimo allows users to enter their tasks and use AI to break larger tasks into sm
 I think this is useful because sometimes people know what they need to do but struggle with where to start or how to organise everything.
 
 Focus Bear already provides guided routines and AI distraction detection, but an integrated visual daily planner with AI task breakdown would be a valuable additional feature.
-
-
 
 ### 4. Based on my research, what's one improvement Focus Bear could make?
 
