@@ -99,3 +99,31 @@ Yes, formatting the code made it easier to read and understand. Prettier helped 
 ### 4. What did I learn?
 
 I learned how ESLint and Prettier work together to improve code quality. I also reviewed the Airbnb JavaScript Style Guide and understood how following consistent coding standards can make collaboration and code maintenance easier.
+
+
+### Clean Code: Meaningful Variable and Function Names
+
+I researched clean code naming practices and learned that variable and function names should be clear, meaningful, and easy to understand. A good name should explain the purpose of the variable or function without requiring someone to read the entire code to understand it.
+
+I reviewed the existing code and identified some unclear variable and function names. I refactored the code by replacing short or confusing names with meaningful ones that better describe their purpose.
+
+## 1. What makes a good variable or function name?
+
+A good name should:
+- Clearly describe its purpose.
+- Be simple, meaningful, and easy to understand.
+- Use consistent naming conventions.
+- Use verbs for function names to describe actions.
+- Avoid unnecessary abbreviations and single-letter names.
+
+## 2. What issues can arise from poorly named variables?
+
+Poorly named variables and functions can make code difficult to understand and maintain. They can also cause confusion when debugging, increase the time needed to identify issues, and make collaboration more challenging for other developers.
+
+## 3. How did refactoring improve code readability?
+
+Refactoring helped make the code cleaner, more organised, and easier to understand. By replacing unclear names with meaningful ones, it became easier to identify what each variable and function does. It also improved maintainability and made future updates easier.
+
+## My Reflection
+
+This task helped me understand that writing clean code is not just about making the code work; it is also about making it understandable for other developers. As a QA professional, I believe readable code makes debugging, reviewing changes, and identifying potential issues easier. I will apply these naming practices in my future testing and automation projects.
