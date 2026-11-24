@@ -84,50 +84,38 @@ I learned that small improvements, such as meaningful variable names, proper for
 
 # Clean Code – Reflection
 
-### 1. Why is code formatting important?
+## 1. Why is code formatting important?
 
-Consistent code formatting makes code easier to read, understand and maintain. It also helps developers follow the same coding standards when working on a project. Good formatting makes it easier to identify errors, review changes and collaborate with other team members.
+Consistent code formatting makes code easier to read, understand, and maintain. When everyone follows the same coding style, it becomes easier to work with other developers, review changes, and identify potential issues. It also makes the codebase look more organised and professional.
 
-### 2. What issues did the linter detect?
+## 2. What issues did the linter detect?
 
-While reviewing the codebase, I used ESLint to identify potential coding issues and inconsistencies. These included formatting problems, unused variables, inconsistent code style and other rule violations. I worked on fixing the reported issues to make the code cleaner and more consistent.
+While reviewing and cleaning up the code, I focused on issues such as:
 
-### 3. Did formatting the code make it easier to read?
+- **Unused variables:** Removed variables that were declared but never used.
+- **Inconsistent formatting:** Fixed spacing, indentation, and quote inconsistencies to follow the project's coding standards.
+- **Missing semicolons:** Added semicolons where required by the configured ESLint rules.
 
-Yes, formatting the code made it easier to read and understand. Prettier helped maintain consistent indentation, spacing and code structure, while ESLint helped identify potential issues. Overall, this task helped me understand the importance of maintaining clean, readable and maintainable code.
+I also improved variable and function names. For example, I changed `calc` to `calculateProfit` to make the purpose of the function clearer.
 
-### 4. What did I learn?
+## 3. Did formatting the code make it easier to read?
 
-I learned how ESLint and Prettier work together to improve code quality. I also reviewed the Airbnb JavaScript Style Guide and understood how following consistent coding standards can make collaboration and code maintenance easier.
+Yes, definitely. After applying consistent formatting, the code became cleaner and easier to follow. Meaningful variable and function names also helped me understand what each part of the code was doing without spending extra time figuring it out.
 
+## 4. ESLint and Prettier – Completion
 
-# Clean Code: Meaningful Variable and Function Names
+I finished configuring and running ESLint and Prettier on the project.
 
-I researched clean code naming practices and learned that variable and function names should be clear, meaningful, and easy to understand. A good name should explain the purpose of the variable or function without requiring someone to read the entire code to understand it.
+- Ran Prettier to format the code consistently.
+- Ran ESLint to identify coding issues and potential problems.
+- Fixed the reported issues and reviewed the updated files.
+- Re-ran the checks to verify the changes.
 
-I reviewed the existing code and identified some unclear variable and function names. I refactored the code by replacing short or confusing names with meaningful ones that better describe their purpose.
+The project now passes the configured ESLint and Prettier checks.
 
-## 1. What makes a good variable or function name?
+## 5. Final Reflection
 
-A good name should:
-- Clearly describe its purpose.
-- Be simple, meaningful, and easy to understand.
-- Use consistent naming conventions.
-- Use verbs for function names to describe actions.
-- Avoid unnecessary abbreviations and single-letter names.
-
-## 2. What issues can arise from poorly named variables?
-
-Poorly named variables and functions can make code difficult to understand and maintain. They can also cause confusion when debugging, increase the time needed to identify issues, and make collaboration more challenging for other developers.
-
-## 3. How did refactoring improve code readability?
-
-Refactoring helped make the code cleaner, more organised, and easier to understand. By replacing unclear names with meaningful ones, it became easier to identify what each variable and function does. It also improved maintainability and made future updates easier.
-
-## My Reflection
-
-This task helped me understand that writing clean code is not just about making the code work; it is also about making it understandable for other developers. As a QA professional, I believe readable code makes debugging, reviewing changes, and identifying potential issues easier. I will apply these naming practices in my future testing and automation projects.
-
+This task helped me understand why maintaining consistent code quality is important. I learned that clean code is not just about making it look good; it is also about making it easier for other developers to understand, maintain, and improve in the future.
 
 # Clean Code: Writing Small, Single-Purpose Functions
 
