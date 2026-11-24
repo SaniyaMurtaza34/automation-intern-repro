@@ -308,3 +308,162 @@ Refactoring helped reduce unnecessary repetition and made the code cleaner, more
 ## What I learned:
 
 I learned that writing clean code is not just about making it work; it is also about making it easier for other developers to understand, update, and maintain.
+
+
+# Clean Code and Refactoring
+
+## 1. Introduction
+
+Clean code is about writing code that is simple, readable, understandable and easy to maintain. Good code should not only work correctly but should also be easy for other developers to understand and update.
+
+Refactoring is the process of improving the internal structure of existing code without changing its expected functionality.
+
+The main purpose of this task was to understand common refactoring techniques, identify complicated code and improve it by making it simpler and more readable.
+
+## 2. Common Refactoring Techniques
+
+During my research, I learned about the following common refactoring techniques:
+
+1. **Extract Method:** Move a block of code into a separate function to make the main function shorter and easier to understand.
+
+2. **Rename Variables:** Use meaningful variable and function names instead of unclear or shortened names.
+
+3. **Remove Duplicate Code:** Avoid repeating the same logic in multiple places by reusing functions.
+
+4. **Simplify Conditional Statements:** Make complicated if/else conditions easier to understand.
+
+5. **Replace Magic Numbers:** Use meaningful constants instead of unexplained numbers in the code.
+
+6. **Remove Dead Code:** Delete unused variables, functions and unnecessary code.
+
+7. **Early Return:** Return from a function as soon as a condition is met instead of using multiple nested if/else statements.
+
+8. **Reduce Function Complexity:** Keep functions small and focused on a single responsibility.
+
+## 3. Example of Complicated Code
+
+For this task, I created a JavaScript example based on a simple login validation system.
+
+### Original Code (Before Refactoring)
+
+```javascript
+function checkUser(user) {
+    let result = "";
+
+    if (user != null) {
+        if (user.username != "") {
+            if (user.password != "") {
+                if (user.isActive == true) {
+                    result = "Login successful";
+                } else {
+                    result = "Account is inactive";
+                }
+            } else {
+                result = "Password is missing";
+            }
+        } else {
+            result = "Username is missing";
+        }
+    } else {
+        result = "User does not exist";
+    }
+
+    return result;
+}
+```
+
+### What Made the Original Code Complex?
+
+The original code had several issues:
+
+- Multiple nested if/else conditions made the logic difficult to follow.
+- The indentation increased with every condition.
+- The result variable was unnecessary.
+- Some comparisons used loose equality operators.
+- The function was harder to read, maintain and debug.
+- Understanding the different validation scenarios required more effort.
+
+## 4. Refactored Code
+
+I refactored the original code using the Early Return technique.
+
+### Improved Code (After Refactoring)
+
+```javascript
+function checkUser(user) {
+    if (!user) {
+        return "User does not exist";
+    }
+
+    if (!user.username) {
+        return "Username is missing";
+    }
+
+    if (!user.password) {
+        return "Password is missing";
+    }
+
+    if (!user.isActive) {
+        return "Account is inactive";
+    }
+
+    return "Login successful";
+}
+```
+
+### How Did Refactoring Improve the Code?
+
+After refactoring:
+
+- Removed unnecessary nested conditions.
+- Used early returns to simplify the validation logic.
+- Removed the unnecessary result variable.
+- Reduced indentation and made the code easier to read.
+- Made each validation condition clear and independent.
+- Improved maintainability and made future changes easier.
+
+The updated code is shorter and more organised while preserving the expected behaviour for the intended login inputs.
+
+## 5. Testing the Refactored Code
+
+I considered the following test scenarios to verify the login validation logic:
+
+| Test Scenario | Expected Result |
+|---|---|
+| User is null | User does not exist |
+| Username is empty | Username is missing |
+| Password is empty | Password is missing |
+| Account is inactive | Account is inactive |
+| All details are valid | Login successful |
+
+These scenarios help verify that the refactored function handles different conditions correctly.
+
+## 6. My Reflection
+
+### What made the original code complex?
+
+While reviewing the original code, I noticed that multiple conditions were placed inside one another. This made the function difficult to read and understand.
+
+The unnecessary result variable and repeated if/else blocks also made the code longer than it needed to be. It was not easy to identify the validation flow at first glance.
+
+### How did refactoring improve it?
+
+Refactoring helped me understand how small changes can make a big difference in code quality.
+
+I used the Early Return technique to remove unnecessary nested conditions. This made the function shorter, cleaner and easier to understand.
+
+I also learned that meaningful conditions and simple logic can make debugging and future maintenance much easier.
+
+### What I Learned
+
+Through this task, I learned that writing code is not just about making something work. It is also important to make sure the code is understandable and maintainable.
+
+As a QA Engineer, I believe clean code is important because readable code makes it easier to understand application behaviour, identify potential issues and support effective testing.
+
+I will try to apply these clean coding practices in my future JavaScript and automation testing projects.
+
+## 7. Conclusion
+
+This task helped me understand the importance of clean code and refactoring. By applying the Early Return technique, I successfully simplified a complicated login validation example.
+
+I learned that good code should be simple, readable, reusable and easy to maintain.
