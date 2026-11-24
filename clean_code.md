@@ -204,3 +204,107 @@ This improved readability, reduced complexity, and made the code easier to maint
 This task helped me understand the importance of writing small, single-purpose functions. I learned that good code structure makes a big difference in software development, especially when working on larger projects or collaborating with other developers.
 
 Going forward, I will try to keep my functions simple, use meaningful names, and avoid putting too much logic into a single function.
+
+# Avoiding Code Duplication
+
+### First, what is DRY?
+DRY stands for Don't Repeat Yourself. It is a software development principle that means: Don't write the same code again and again. Instead, write it once and reuse it whenever needed.
+Imagine you are writing automation test cases using Playwright.
+
+Suppose you have three test cases, and each test needs to open the same website.
+
+#### Example 1: Before applying DRY (duplicated code)
+test('Login test', async ({ page }) => {
+    await page.goto('https://example.com');
+    await page.getByLabel('Email').fill('test@gmail.com');
+});
+
+test('Signup test', async ({ page }) => {
+    await page.goto('https://example.com');
+    await page.getByLabel('Name').fill('Saniya');
+});
+
+test('Profile test', async ({ page }) => {
+    await page.goto('https://example.com');
+    await page.getByText('Profile').click();
+});
+
+
+Can you see the problem? This line is repeated three times: await page.goto('https://example.com');
+
+
+If the website URL changes, you have to update it in three places.
+
+That's unnecessary repetition!
+
+### Example 2: After applying DRY (refactored code)
+Instead of repeating the same code, create a reusable function.
+async function openWebsite(page) {
+    await page.goto('https://example.com');
+}
+
+test('Login test', async ({ page }) => {
+    await openWebsite(page);
+    await page.getByLabel('Email').fill('test@gmail.com');
+});
+
+test('Signup test', async ({ page }) => {
+    await openWebsite(page);
+    await page.getByLabel('Name').fill('Saniya');
+});
+
+test('Profile test', async ({ page }) => {
+    await openWebsite(page);
+    await page.getByText('Profile').click();
+});
+
+
+Now you have written the website navigation logic only once.
+
+DRY applied
+ You can reuse openWebsite() whenever you need it.
+
+## 2. What does your actual task ask you to do?
+
+Let's break it down into four simple steps.
+### Step 1: Find repeated code in your test repository
+First, open your GitHub test repository in VS Code.
+Look through your automation test files.
+For example, you might find:
+- The same website URL repeated in multiple tests.
+- The same login steps repeated in different test cases.
+- The same navigation steps repeated.
+- The same test data repeated.
+Your job is to identify one example of unnecessary repetition.
+### Step 2: Refactor the code
+Refactoring means improving the structure of existing code without changing what it does.
+
+For example: 
+Before: 
+await page.goto('https://example.com');
+Repeated in multiple test cases.
+
+After:
+async function openWebsite(page) {
+    await page.goto('https://example.com');
+}
+Then reuse the function.
+
+
+## DRY (Don't Repeat Yourself) Principle – Reflection
+
+I researched the DRY (Don't Repeat Yourself) principle and learned that it helps reduce code duplication by reusing common logic instead of writing the same code multiple times.
+
+While reviewing my test repository, I looked for repeated code that could be simplified and refactored. I worked on improving the code structure by removing unnecessary repetition and making the code easier to understand and maintain.
+
+## What were the issues with duplicated code?
+
+Duplicated code makes the project harder to maintain because the same logic may need to be updated in multiple places. If a change is made in one place but missed elsewhere, it can lead to inconsistencies and potential bugs. It also makes the code longer and harder to manage.
+
+## How did refactoring improve maintainability?
+
+Refactoring helped reduce unnecessary repetition and made the code cleaner, more organised, and easier to understand. By reusing common logic, future updates can be made in one place instead of modifying multiple sections. This also makes testing and debugging easier.
+
+## What I learned:
+
+I learned that writing clean code is not just about making it work; it is also about making it easier for other developers to understand, update, and maintain.
