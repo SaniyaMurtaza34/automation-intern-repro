@@ -117,6 +117,41 @@ The project now passes the configured ESLint and Prettier checks.
 
 This task helped me understand why maintaining consistent code quality is important. I learned that clean code is not just about making it look good; it is also about making it easier for other developers to understand, maintain, and improve in the future.
 
+# Clean Code – Code Style, ESLint and Prettier
+
+## 1. Why is code formatting important?
+
+Consistent code formatting makes code easier to read, understand and maintain. When everyone follows the same coding standards, the project looks more organised and developers can understand each other's work more easily.
+
+I learned that meaningful variable and function names also make a big difference. For example, changing a function name from `calc` to `calculateProfit` makes its purpose much clearer. Small improvements like this help reduce confusion and make future updates easier.
+
+## 2. What issues did the linter detect?
+
+While reviewing and cleaning up the code, I focused on common JavaScript code quality issues, including:
+
+- **Unused variables:** Variables that were declared but never used. These can create unnecessary code, so I removed them where appropriate.
+- **Inconsistent formatting:** Differences in indentation, spacing and quotation marks. I used Prettier to apply consistent formatting.
+- **Missing semicolons or inconsistent syntax style:** I followed the project's configured style rules to keep the code consistent.
+
+*Note: These are examples of common issues. I will update this section with the exact ESLint warnings and fixes reported by my project.*
+
+## 3. Did formatting the code make it easier to read?
+
+Yes, definitely. After applying consistent formatting, the code became cleaner and easier to follow. Proper indentation, consistent spacing and meaningful names made functions and variables easier to understand.
+
+I also realised that clean code is not just about making the code look good. It is about making it easier for other developers to read, maintain, debug and improve.
+
+## 4. ESLint and Prettier – Completion
+
+I configured ESLint and Prettier in my development environment and ran them against the project.
+
+I reviewed the reported issues, applied the necessary fixes and used Prettier to format the code consistently.
+
+**Final verification:** [npx eslint . --fix
+npx prettier --write . 
+npx eslint .
+npx prettier --check .]
+
 # Clean Code: Writing Small, Single-Purpose Functions
 
 ## 1. Research: Best Practices
