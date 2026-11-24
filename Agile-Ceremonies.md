@@ -1,4 +1,3 @@
-
 # Agile Ceremonies & Team Collaboration
 
 ## Research & Learn

@@ -32,7 +32,7 @@ My role is QA Engineer. I help the team make sure the application works correctl
 
 I work closely with developers because we both want to deliver a reliable product. When I find a bug, I explain the issue clearly, provide steps to reproduce it, and share any useful evidence. Developers investigate and fix the problem, and I test it again to confirm the fix works. I also communicate with the Product Manager to clarify requirements and make sure the features meet the expected outcomes. This collaboration helps us identify issues early and avoid misunderstandings.
 
-## Task 
+## Task
 
 ### How My Role Fits into the Agile Team
 

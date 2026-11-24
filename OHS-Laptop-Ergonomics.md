@@ -3,23 +3,27 @@
 ## 1. Research & Learn
 
 **Risks of using a laptop without external equipment:**
+
 - Neck and shoulder strain from looking down at the screen.
 - Wrist discomfort due to awkward keyboard positioning.
 - Back pain caused by poor posture.
 - Eye strain from prolonged screen use.
 
 **Ergonomic equipment:**
+
 - Laptop stand to raise the screen to eye level.
 - External keyboard and mouse for comfortable hand positioning.
 - Adjustable chair with proper back support.
 
 **Workspace adjustments:**
+
 - Keep the screen at or slightly below eye level.
 - Sit with feet flat on the floor and back supported.
 - Keep elbows around 90 degrees and wrists straight.
 - Position the screen approximately an arm's length away.
 
 **Daily habits:**
+
 - Take short movement breaks every 30–60 minutes.
 - Follow the 20-20-20 rule to reduce eye strain.
 - Check posture regularly and stretch throughout the day.
@@ -29,7 +33,7 @@
 What equipment changes can you make to improve your workspace setup? (e.g., using an external monitor, adjusting your chair, using a laptop stand)?
 I can use a laptop stand and an external keyboard to make my setup more comfortable. I can also adjust my chair to support my back and help me sit properly while working.
 
-What behavioural changes can you implement to improve posture and reduce strain? (e.g., sitting upright, taking regular breaks, adjusting screen height) 
+What behavioural changes can you implement to improve posture and reduce strain? (e.g., sitting upright, taking regular breaks, adjusting screen height)
 I will try to sit straight, keep my shoulders relaxed, and avoid looking down at my laptop for too long. I'll also take short breaks to stretch and move around.
 
 How can you remind yourself to maintain good posture and take breaks throughout the day? (Hint: Use Focus Bear to schedule movement breaks!)

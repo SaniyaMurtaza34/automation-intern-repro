@@ -1,13 +1,13 @@
 Professionalism at Focus Bear — Reflection
 
 1. Professional and unprofessional behaviour
-Professional behaviour in a relaxed workplace means being friendly while remaining respectful and reliable. Examples include arriving on time for meetings, listening without interrupting, completing agreed tasks, updating teammates on progress, and acknowledging mistakes. Unprofessional behaviour includes rude jokes, discriminatory comments, bullying, repeatedly missing deadlines without communication, or sharing confidential information.
+   Professional behaviour in a relaxed workplace means being friendly while remaining respectful and reliable. Examples include arriving on time for meetings, listening without interrupting, completing agreed tasks, updating teammates on progress, and acknowledging mistakes. Unprofessional behaviour includes rude jokes, discriminatory comments, bullying, repeatedly missing deadlines without communication, or sharing confidential information.
 
 2. Respectful communication in remote teams
-I will use clear and polite messages, consider how my tone may sound in writing, and respect different backgrounds and time zones. If I disagree, I will explain my reasoning calmly, ask questions, and focus on the problem rather than criticising the person. I will avoid assuming someone is available immediately.
+   I will use clear and polite messages, consider how my tone may sound in writing, and respect different backgrounds and time zones. If I disagree, I will explain my reasoning calmly, ask questions, and focus on the problem rather than criticising the person. I will avoid assuming someone is available immediately.
 
 3. Giving and receiving feedback
-When giving feedback, I will describe the specific issue, its impact, and a possible improvement. When receiving feedback, I will listen carefully, ask for clarification if needed, thank the person, and apply the suggestions rather than reacting defensively.
+   When giving feedback, I will describe the specific issue, its impact, and a possible improvement. When receiving feedback, I will listen carefully, ask for clarification if needed, thank the person, and apply the suggestions rather than reacting defensively.
 
 4. My reflection
 
@@ -29,12 +29,13 @@ I will plan my work, track my time in Focus Bear, review onboarding issues, atte
 How might you follow up with colleagues or supervisors if you need information/action from them? How would you escalate it further if you don't get a response and when would you escalate?
 If I need information or help from a teammate or supervisor, I will send a polite message explaining what I need and why. If I don't receive a response within a reasonable time, such as one working day, I will follow up politely. If the issue is urgent, blocking my work, or affecting a deadline, I will reach out to my supervisor sooner through the appropriate communication channel. I believe clear communication and timely follow-ups help keep work on track.
 
-
 What are some things you won't do?
+
 - Discriminate, bully, harass, or make disrespectful jokes.
 - Share private company or teammate information without permission.
 - Ignore feedback, hide mistakes, or misrepresent my hours or progress.
 - Interrupt meetings, blame others, or communicate aggressively.
 - Disappear when blocked without updating my supervisor.
+
 5. My commitment
-I aim to be respectful, accountable, approachable, and proactive throughout my internship. I will communicate clearly, ask for feedback, and contribute to a supportive remote team.
+   I aim to be respectful, accountable, approachable, and proactive throughout my internship. I will communicate clearly, ask for feedback, and contribute to a supportive remote team.

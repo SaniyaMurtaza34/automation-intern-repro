@@ -1,0 +1,3 @@
+Learning Git commit messages
+Practising clear commit messages
+Good commit messages improve collaboration

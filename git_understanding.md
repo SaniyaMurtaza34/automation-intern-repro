@@ -33,7 +33,6 @@ A few things I learned from this experience:
 
 Overall, I found this exercise helpful because I was able to create and resolve a merge conflict myself rather than just reading about how it works. It also reminded me that, as a QA Engineer, reviewing changes carefully is important to maintain software quality and avoid introducing unexpected issues.
 
-
 # Understanding Git Staging and Committing
 
 ## 1. What is the difference between staging and committing?
@@ -59,6 +58,7 @@ This makes the project history easier to understand and maintain.
 I might want to stage changes without committing when I am not ready to save them in the repository's history.
 
 For example:
+
 - When I want to review my changes before committing.
 - When I have modified multiple files but only want to commit one specific file.
 - When I want to separate different tasks into individual commits.
@@ -135,3 +135,119 @@ Git can usually merge changes automatically if two people edit different parts o
 ## 7. What I learned
 
 I learned how to create a new branch, make changes, commit them and switch back to the main branch. I also understood how branches help developers work independently, review code and avoid affecting the stable version of a project.
+# Git Commands – Learning and Practical Reflection
+
+## 1. What Does Each Command Do?
+
+### `git checkout main -- <file>`
+
+This command allows me to restore a specific file from the `main` branch without affecting other files or changes in my current branch. I learned that it is useful when I accidentally modify a file and want to bring back its original version.
+
+### `git cherry-pick <commit>`
+
+This command allows me to take a specific commit from another branch and apply it to my current branch. It is useful when I need a particular fix or feature without merging all the changes from that branch.
+
+### `git log`
+
+This command displays the commit history of a repository. It helps me understand what changes were made, when they were made, and who made them. I can also use it to find a specific commit when working on an issue.
+
+### `git blame <file>`
+
+This command shows who last modified each line of a file and the corresponding commit information. It helps me understand the history of a particular section of code and makes it easier to investigate issues.
+
+## 2. When Would I Use These Commands in a Real Project?
+
+In a real project, especially when multiple developers are working on the same codebase, these commands can make development and collaboration easier.
+
+- **Git checkout:** I would use it when I accidentally change a file and need to restore its original version from the main branch.
+- **Git cherry-pick:** I would use it when a specific bug fix needs to be applied to another branch without merging unrelated changes.
+- **Git log:** I would use it to review previous commits, track changes and understand the development history of a feature.
+- **Git blame:** I would use it when investigating a bug or trying to understand why a particular line of code was added or modified.
+
+## 3. What Surprised Me While Testing These Commands?
+
+While experimenting with these commands, I realised that Git provides more control over individual changes than I initially expected.
+
+What surprised me most was that `git cherry-pick` allows me to select just one commit from another branch instead of merging the entire branch. I also found `git blame` useful because it helps trace individual lines of code back to their previous changes.
+
+Another thing I learned is that `git checkout main -- <file>` can restore a specific file without affecting other files in my working directory. This is particularly helpful when working on multiple changes at the same time.
+
+Overall, this exercise helped me understand how Git can be used to manage changes, investigate issues and collaborate more confidently with other developers in a long-running project.
+
+# Git Understanding – Git Bisect
+
+## 1. What does `git bisect` do?
+
+Git Bisect is a useful debugging tool that helps identify the exact commit that introduced a bug into a project. It works using a binary search approach, comparing good and bad commits to narrow down the issue.
+
+Instead of manually checking every commit, Git selects commits in between and helps locate the problematic change much faster.
+
+## 2. When would you use it in a real-world debugging situation?
+
+I would use Git Bisect when an application was working correctly before, but after several updates or releases, I noticed unexpected behaviour or a new bug.
+
+For example, if a feature was working in an earlier version but stopped working after multiple commits, I could use Git Bisect to identify which commit introduced the issue.
+
+This would help me investigate the root cause, understand what changed, and work with the development team to resolve the problem.
+
+## 3. How does it compare to manually reviewing commits?
+
+Before learning about Git Bisect, I would normally consider reviewing commits one by one to identify where something went wrong. However, this can take a lot of time, especially in projects with many changes.
+
+Git Bisect makes this process more efficient by using binary search to narrow down the possible commits. It reduces unnecessary investigation and helps identify the problematic change faster.
+
+## 4. My Learning Reflection
+
+During this exercise, I learned how Git Bisect can be used as part of a debugging process. I created multiple commits in a test repository, intentionally introduced a bug, and experimented with identifying the commit responsible for it.
+
+As a QA engineer, I found this particularly useful because identifying when a defect was introduced can help with root cause analysis and make communication with developers more effective.
+
+Overall, this exercise helped me understand that Git is not only useful for version control but also provides practical tools for investigating and resolving software defects.
+
+# Understanding Git Commit Messages
+
+## 1. What makes a good commit message?
+
+After exploring Git commit histories and learning about commit message best practices, I realised that a good commit message should be clear, meaningful and easy to understand.
+
+It should briefly explain what has been changed and why the change was necessary. Using action words such as Add, Fix, Update and Remove makes messages easier to understand.
+
+I also learned that commit messages should not be too vague or unnecessarily long. A short but meaningful message helps other developers understand the purpose of a change without having to review the entire code.
+
+## 2. How does a clear commit message help in team collaboration?
+
+Clear commit messages make communication between team members easier. When multiple developers work on the same project, everyone needs to understand what changes have been made.
+
+For example, if a developer commits a bug fix with a message like `fix: correct login validation`, another team member can quickly understand the purpose of that commit.
+
+It also makes code reviews, debugging and tracking changes easier. Good commit messages help the whole team stay organised and reduce confusion.
+
+## 3. How can poor commit messages cause issues later?
+
+Poor commit messages can create confusion, especially when developers need to investigate an old bug or understand why a particular change was introduced.
+
+For example, a message like `fixed stuff` does not provide enough information about what was fixed. Developers may need to open multiple files or compare changes just to understand the purpose of that commit.
+
+Overly detailed messages can also make the commit history difficult to read because important information gets lost in unnecessary explanations.
+
+## 4. What I learned from this exercise
+
+During this exercise, I practised writing three different types of commit messages: vague, overly detailed and well-structured.
+
+I noticed that the quality of a commit message makes a big difference when reviewing project history. The well-structured message was much easier to understand because it explained the change clearly without adding unnecessary information.
+
+Going forward, I will try to write meaningful commit messages that describe the actual changes I make. I understand that good commit messages are not just a Git convention; they are also an important part of professional development and effective teamwork.
+
+# My Understanding of Git Pull Requests
+
+### 1. Why are PRs important in a team workflow?
+
+As a beginner, I learned that Pull Requests help developers work together without directly changing the main branch. They give team members an opportunity to review changes, identify possible bugs and provide feedback before the changes are merged. This helps maintain software quality and makes teamwork easier.
+
+### 2. What makes a well-structured PR?
+
+A good PR should have a clear title and description explaining what was changed and why. It should contain only relevant changes, include related issue links when applicable, and provide screenshots or testing results if needed. This makes it easier for other developers to understand and review the changes.
+
+### 3. What did I learn from reviewing an open-source PR?
+
+By reviewing an open-source PR, I learned how developers communicate through comments, share suggestions and request changes. I understood that code reviews are an important part of software development because they help identify problems and improve code quality before merging changes.
