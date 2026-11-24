@@ -467,3 +467,265 @@ I will try to apply these clean coding practices in my future JavaScript and aut
 This task helped me understand the importance of clean code and refactoring. By applying the Early Return technique, I successfully simplified a complicated login validation example.
 
 I learned that good code should be simple, readable, reusable and easy to maintain.
+
+# Clean Code: Small, Single-Purpose Functions
+
+## 1. Introduction
+
+Clean Code is about writing code that is easy to read, understand, test and maintain.
+
+One important principle is to keep functions small and give each function a single responsibility. Instead of putting multiple operations into one large function, we can divide the code into smaller functions, where each function performs one specific task.
+
+In this exercise, I explored how to refactor a complex order-processing function into smaller, reusable and easy-to-understand functions.
+
+## 2. Best Practices for Writing Small Functions
+
+The following are some important practices I learned:
+
+- **Single Responsibility:** Each function should perform one specific task.
+- **Meaningful Names:** Use descriptive names that explain what a function does.
+- **Keep Functions Small:** Avoid putting too many operations inside one function.
+- **Avoid Code Duplication:** Reuse existing functions instead of repeating the same logic.
+- **Clear Parameters:** Pass only the information required by a function.
+- **Easy Testing:** Smaller functions are easier to test independently.
+- **Readability:** Write code that other developers can easily understand.
+
+Following these practices makes code easier to maintain, debug and improve.
+
+## 3. Example of a Long and Complex Function (Before Refactoring)
+
+For this exercise, I created an example of an online shopping order process.
+
+The original function handles several responsibilities:
+
+- Validating customer information.
+- Calculating the subtotal.
+- Applying discount codes.
+- Calculating the final order amount.
+- Displaying the order summary.
+
+### Before Refactoring
+
+```javascript
+function processOrder(user, products, discountCode) {
+    // Validate user
+    if (!user || !user.name || !user.email) {
+        throw new Error("Invalid user information");
+    }
+
+    // Calculate subtotal
+    let subtotal = 0;
+
+    for (const product of products) {
+        if (product.price <= 0 || product.quantity <= 0) {
+            throw new Error("Invalid product information");
+        }
+
+        subtotal += product.price * product.quantity;
+    }
+
+    // Apply discount
+    let discount = 0;
+
+    if (discountCode === "SAVE10") {
+        discount = subtotal * 0.10;
+    } else if (discountCode === "SAVE20") {
+        discount = subtotal * 0.20;
+    }
+
+    // Calculate final total
+    const finalTotal = subtotal - discount;
+
+    // Display order summary
+    console.log("Order Summary");
+    console.log("Customer: " + user.name);
+    console.log("Subtotal: $" + subtotal);
+    console.log("Discount: $" + discount);
+    console.log("Final Total: $" + finalTotal);
+
+    return finalTotal;
+}
+```
+
+### Problems with the Original Function
+
+The original `processOrder()` function performs multiple responsibilities in one place.
+
+This creates some challenges:
+
+- The function is harder to read because it contains several operations.
+- Finding and fixing bugs can take more time.
+- Testing individual operations is difficult.
+- Updating one part of the logic can make the function more complicated.
+- The code is less reusable because the logic is combined.
+
+## 4. Refactoring into Small, Focused Functions (After Refactoring)
+
+To improve the code structure, I divided the original function into five smaller functions.
+
+Each function has one clear responsibility.
+
+### Function 1: validateUser()
+
+**Responsibility:** Checks whether the customer information is valid.
+
+```javascript
+function validateUser(user) {
+    if (!user || !user.name || !user.email) {
+        throw new Error("Invalid user information");
+    }
+
+    return true;
+}
+```
+
+### Function 2: calculateSubtotal()
+
+**Responsibility:** Calculates the total price of all products based on their prices and quantities.
+
+```javascript
+function calculateSubtotal(products) {
+    let subtotal = 0;
+
+    for (const product of products) {
+        if (product.price <= 0 || product.quantity <= 0) {
+            throw new Error("Invalid product information");
+        }
+
+        subtotal += product.price * product.quantity;
+    }
+
+    return subtotal;
+}
+```
+
+### Function 3: applyDiscount()
+
+**Responsibility:** Applies a discount based on the discount code.
+
+```javascript
+function applyDiscount(subtotal, discountCode) {
+    if (discountCode === "SAVE10") {
+        return subtotal * 0.10;
+    }
+
+    if (discountCode === "SAVE20") {
+        return subtotal * 0.20;
+    }
+
+    return 0;
+}
+```
+
+### Function 4: calculateFinalTotal()
+
+**Responsibility:** Calculates the final order amount after subtracting the discount.
+
+```javascript
+function calculateFinalTotal(subtotal, discount) {
+    return subtotal - discount;
+}
+```
+
+### Function 5: displayOrderSummary()
+
+**Responsibility:** Displays the customer information and order summary.
+
+```javascript
+function displayOrderSummary(user, subtotal, discount, finalTotal) {
+    console.log("Order Summary");
+    console.log("Customer: " + user.name);
+    console.log("Subtotal: $" + subtotal);
+    console.log("Discount: $" + discount);
+    console.log("Final Total: $" + finalTotal);
+}
+```
+
+### Main Function: processOrder()
+
+After creating the smaller functions, the main function becomes much simpler.
+
+It coordinates the individual functions instead of handling every operation itself.
+
+```javascript
+function processOrder(user, products, discountCode) {
+    validateUser(user);
+
+    const subtotal = calculateSubtotal(products);
+
+    const discount = applyDiscount(subtotal, discountCode);
+
+    const finalTotal = calculateFinalTotal(subtotal, discount);
+
+    displayOrderSummary(user, subtotal, discount, finalTotal);
+
+    return finalTotal;
+}
+```
+
+## 5. Understanding the Difference: Before vs After
+
+| Before Refactoring | After Refactoring |
+|---|---|
+| One large function handles everything. | Multiple smaller functions handle individual tasks. |
+| Difficult to understand the complete logic. | Each function has a clear purpose. |
+| Harder to identify specific issues. | Easier to identify and debug issues. |
+| Testing the entire function can be complicated. | Individual functions can be tested separately. |
+| Logic is difficult to reuse. | Functions can be reused where needed. |
+| Changes can make the main function more complicated. | Changes can be isolated to the relevant function. |
+
+## 6. Reflection: Why Is Breaking Down Functions Beneficial?
+
+Breaking down a large function into smaller functions makes the code easier to understand, test and maintain.
+
+When all operations are written inside one function, developers need to understand the entire block of code to identify how a particular operation works.
+
+By separating the responsibilities, developers can focus on one operation at a time.
+
+For example, if there is an issue with discount calculation, I can directly investigate the `applyDiscount()` function instead of searching through the entire order-processing function.
+
+I also learned that smaller functions improve reusability. A function such as `calculateSubtotal()` can potentially be used in different parts of an application without duplicating the same logic.
+
+Overall, breaking down functions reduces complexity and makes development and maintenance easier.
+
+## 7. Reflection: How Did Refactoring Improve the Structure of the Code?
+
+Refactoring improved the overall code structure by separating different responsibilities into individual functions.
+
+Before refactoring, the `processOrder()` function handled validation, calculations and displaying the order summary in one place.
+
+After refactoring:
+
+- Each function has a clear and meaningful name.
+- The code is more organised and readable.
+- The main function only coordinates the order-processing steps.
+- Individual functions are easier to test and debug.
+- Changes can be made to one function without unnecessarily affecting other operations.
+
+I realised that refactoring does not always mean changing what the code does. It can also mean improving how the code is organised while maintaining the same expected behaviour.
+
+## 8. QA Perspective: What Did I Learn?
+
+As a Software Quality Assurance Engineer, I found this exercise particularly useful because clean code also makes testing easier.
+
+For example:
+
+- I can test `validateUser()` with valid and invalid customer information.
+- I can test `calculateSubtotal()` with different product prices and quantities.
+- I can test `applyDiscount()` with valid and invalid discount codes.
+- I can test `calculateFinalTotal()` with different subtotal and discount values.
+- I can verify that `displayOrderSummary()` displays the correct order information.
+
+This makes it easier to identify which part of the application is causing an issue.
+
+It also helps create focused test cases and improves overall testability.
+
+## 9. Conclusion
+
+Through this exercise, I learned the importance of writing small, single-purpose functions.
+
+The main improvement was separating a large function into smaller functions with clear responsibilities.
+
+This made the code easier to read, understand, test, debug and maintain.
+
+Going forward, I will apply this principle when writing and reviewing code to make sure each function has a clear purpose and does not handle unnecessary responsibilities.
