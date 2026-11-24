@@ -127,3 +127,57 @@ Refactoring helped make the code cleaner, more organised, and easier to understa
 ## My Reflection
 
 This task helped me understand that writing clean code is not just about making the code work; it is also about making it understandable for other developers. As a QA professional, I believe readable code makes debugging, reviewing changes, and identifying potential issues easier. I will apply these naming practices in my future testing and automation projects.
+
+
+# Clean Code: Writing Small, Single-Purpose Functions
+
+## 1. Research: Best Practices
+
+While researching clean code principles, I learned that functions should be small, simple, and focused on doing one specific task.
+
+Some important best practices include:
+
+- **Single Responsibility:** Each function should have one clear responsibility.
+- **Meaningful Names:** Use descriptive names that explain what the function does.
+- **Avoid Long Functions:** Break complex logic into smaller, manageable functions.
+- **Avoid Code Duplication:** Reuse existing functions instead of repeating the same logic.
+- **Keep Functions Simple:** Make functions easy to understand, test, and maintain.
+- **Use Clear Parameters:** Pass only the information a function actually needs.
+
+## 2. Example of a Complex Function
+
+I created an example of a function that handles multiple responsibilities, including validating user information, calculating the total price, applying discounts, and displaying the final result.
+
+This makes the function difficult to understand, test, and maintain.
+
+## 3. Refactoring into Smaller Functions
+
+I refactored the original function by separating its responsibilities into smaller functions:
+
+- `validateUser()` – Checks whether the user information is valid.
+- `calculateSubtotal()` – Calculates the total price.
+- `applyDiscount()` – Applies the appropriate discount.
+- `calculateFinalTotal()` – Calculates the final amount.
+- `displayOrderSummary()` – Displays the order information.
+
+Each function now has a clear purpose, making the code easier to follow and maintain.
+
+## 4. Reflection
+
+### Why is breaking down functions beneficial?
+
+Breaking down large functions makes the code easier to read, understand, and maintain. When a function handles too many responsibilities, it becomes difficult to identify problems and make changes without affecting other parts of the code.
+
+By creating smaller functions, each task becomes easier to test and debug. It also makes the code more reusable because individual functions can be used in different parts of the application.
+
+### How did refactoring improve the structure of the code?
+
+Refactoring helped me organise the code into smaller functions, each responsible for a specific task. Instead of keeping all the logic in one large function, I separated the responsibilities into meaningful sections.
+
+This improved readability, reduced complexity, and made the code easier to maintain and test. I also learned that writing clean code is not just about making the code work; it is about making it easier for other developers to understand and work with.
+
+## 5. Conclusion
+
+This task helped me understand the importance of writing small, single-purpose functions. I learned that good code structure makes a big difference in software development, especially when working on larger projects or collaborating with other developers.
+
+Going forward, I will try to keep my functions simple, use meaningful names, and avoid putting too much logic into a single function.
