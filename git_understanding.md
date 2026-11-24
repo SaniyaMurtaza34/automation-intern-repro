@@ -104,6 +104,37 @@ Through this experiment, I understood the difference between modified, staged an
 
 Through this exercise, I learned how staging and committing work together in Git. I also understood that staging does not permanently save changes in the commit history. It simply prepares them for the next commit. This practical experience helped me understand how to manage changes more carefully, review my work and maintain a clean Git history.
 
+"New Change"
+
+# Understanding Git Branches
+
+## 1. Why is pushing directly to main problematic?
+
+Pushing directly to the main branch can be risky because unfinished code or bugs may affect the entire project. It can also create problems for other team members who are working on the same project. Using separate branches helps keep the main branch stable.
+
+## 2. How do branches help with reviewing code?
+
+Branches allow developers to work on their tasks independently without affecting the main project. Once the changes are ready, they can create a Pull Request. Other team members can review the code, provide feedback and suggest improvements before the changes are merged into main.
+
+## 3. What happens if two people edit the same file on different branches?
+
+If two people edit the same file on different branches, Git can usually combine the changes automatically if they are in different parts of the file. However, if they change the same lines, a merge conflict may occur. Developers need to review the differences and resolve the conflict before merging.
+
+## 4. Why is pushing directly to main problematic?
+
+Pushing changes directly to main can be risky because it may introduce bugs or break existing functionality for other team members. It is better to work on a separate branch so changes can be tested and reviewed before being added to the main project.
+
+## 5. How do branches help with reviewing code?
+
+Branches allow developers to work on their changes independently without affecting the main project. Once the work is completed, they can create a pull request so other team members can review the code, suggest improvements, and identify potential issues before merging.
+
+## 6. What happens if two people edit the same file on different branches?
+
+Git can usually merge changes automatically if two people edit different parts of the same file. However, if they modify the same lines differently, Git may create a merge conflict. In that case, the developers need to review the changes and resolve the conflict before completing the merge.
+
+## 7. What I learned
+
+I learned how to create a new branch, make changes, commit them and switch back to the main branch. I also understood how branches help developers work independently, review code and avoid affecting the stable version of a project.
 # Git Commands – Learning and Practical Reflection
 
 ## 1. What Does Each Command Do?
