@@ -731,224 +731,143 @@ This made the code easier to read, understand, test, debug and maintain.
 Going forward, I will apply this principle when writing and reviewing code to make sure each function has a clear purpose and does not handle unnecessary responsibilities.
 
 
-# Clean Code: Comments and Documentation
+# Clean Code: Comments and Documentation Best Practices
 
 ## 1. Introduction
 
-Writing clean code is not only about making sure the application works. It is also about making the code easy to read, understand, maintain and update.
+Writing clean code is not just about making code work. It is also about making it easy for other developers to understand, maintain, and update.
 
-Comments and documentation help developers understand the purpose of the code, especially when someone else needs to work on it in the future.
+Good comments and documentation help explain the purpose of code, especially when the logic is complex or when there are important decisions behind an implementation.
 
-However, adding too many comments is not always a good practice. Comments should provide useful information rather than simply repeat what the code is already doing.
+However, comments should not be used to explain every line of code. Code should be written clearly enough that developers can understand most of it without needing additional explanations.
 
 ## 2. Best Practices for Writing Comments and Documentation
 
-After researching software development guidelines, I identified the following best practices:
+Some important practices I learned are:
 
-### 2.1 Write clear and meaningful comments
+- **Explain the purpose, not the obvious:** Comments should explain why something is happening rather than simply repeating what the code already says.
+- **Use meaningful names:** Choose clear names for functions, variables, and parameters so that the code is self-explanatory.
+- **Keep comments short and relevant:** Comments should be simple, accurate, and easy to understand.
+- **Update comments when code changes:** Outdated comments can confuse developers and lead to incorrect assumptions.
+- **Document complex logic:** If a function contains complicated calculations, business rules, or unexpected behaviour, explain the reasoning behind it.
+- **Avoid unnecessary comments:** Do not add comments to every line when the code is already easy to understand.
+- **Use documentation for reusable functions:** Explain what a function does, its parameters, return value, and any important limitations.
 
-- Use simple and understandable language.
-- Explain why something is happening rather than repeating what the code does.
-- Keep comments short and relevant.
-- Avoid unnecessary comments that make the code harder to read.
-- Make sure comments accurately describe the current implementation.
+## 3. Example: Poorly Commented Code vs Improved Code
 
-### 2.2 Use meaningful names
-
-- Give variables, functions and classes descriptive names.
-- Avoid unclear names such as `x`, `temp` or `data1`.
-- Write code that explains its purpose without requiring additional comments.
-
-### 2.3 Keep documentation updated
-
-- Update documentation whenever the related functionality changes.
-- Remove outdated or incorrect comments.
-- Include important information about functions, parameters, expected results and limitations.
-- Make documentation easy for other developers to understand.
-
-### 2.4 Explain complex logic
-
-- Add comments when working with complex algorithms or business rules.
-- Explain unusual technical decisions.
-- Document workarounds and important limitations.
-- Use TODO comments to identify unfinished work that needs attention.
-
-### 2.5 Follow consistent formatting
-
-- Use proper spelling, grammar and punctuation.
-- Follow the project's existing commenting conventions.
-- Keep documentation organised with meaningful headings.
-- Avoid writing long paragraphs when a short explanation is enough.
-
-**Key takeaway:** Good comments should make the code easier to understand, not create more confusion.
-
-## 3. Example of Poorly Commented Code
-
-Consider the following JavaScript example.
-
-### Before: Poor comments
+### Before: Poorly Written Code
 
 ```javascript
-function calculateTotal(price, quantity) {
-    // Multiply price by quantity
-    let total = price * quantity;
-
-    // Check if total is greater than 100
-    if (total > 100) {
-        // Apply discount
-        total = total - (total * 0.10);
-    }
-
-    // Return total
-    return total;
-}
-```
-
-### What is wrong with these comments?
-
-1. Most comments simply repeat what the code already explains.
-2. They do not provide any additional information.
-3. The reason for applying a 10% discount is not explained.
-4. The code could be easier to understand with more meaningful variable names.
-
-### After: Improved comments and cleaner code
-
-```javascript
-function calculateOrderTotal(unitPrice, quantity) {
-    const subtotal = unitPrice * quantity;
-
-    // Orders above $100 qualify for a 10% discount.
-    const discountRate = 0.10;
-
-    if (subtotal > 100) {
-        return subtotal * (1 - discountRate);
-    }
-
-    return subtotal;
-}
-```
-
-### Why is the improved version better?
-
-- The function name clearly explains its purpose.
-- Variable names such as `unitPrice` and `subtotal` make the code easier to understand.
-- Unnecessary comments have been removed.
-- The remaining comment explains the business rule behind the discount.
-- The code is cleaner and easier to maintain.
-
-The main lesson is that comments should explain information that cannot be easily understood from the code itself.
-
-## 4. When Should You Add Comments?
-
-I believe comments are useful when the purpose or reasoning behind a particular piece of code is not immediately clear.
-
-I would add comments in the following situations:
-
-1. **Complex business logic:** When a function contains complicated conditions or business rules that need additional explanation.
-
-2. **Technical decisions:** When a particular approach has been chosen for a specific reason that might not be obvious to another developer.
-
-3. **Workarounds:** When a temporary solution or workaround is necessary because of a technical limitation.
-
-4. **Important limitations:** When there are restrictions or special conditions that other developers should know before modifying the code.
-
-5. **Public functions and APIs:** When documenting how a function works, what parameters it accepts, what it returns and how other developers should use it.
-
-6. **TODO comments:** When there is unfinished work or an improvement that needs to be addressed later.
-
-## 5. When Should You Avoid Comments and Improve the Code Instead?
-
-Comments are not always the best solution. Sometimes, the code itself needs improvement.
-
-I would avoid adding comments in these situations:
-
-1. **When the code is already clear:** If the function or variable name explains its purpose, an additional comment is unnecessary.
-
-2. **When comments repeat the code:** Avoid explaining obvious operations such as adding two numbers or returning a variable.
-
-3. **When variable names are unclear:** Instead of explaining what a variable represents in a comment, give it a meaningful name.
-
-4. **When functions are too complicated:** If a function performs too many operations, consider breaking it into smaller functions.
-
-5. **When comments are outdated:** Remove or update comments that no longer match the actual implementation.
-
-6. **When code can be simplified:** Improve the code structure and readability instead of adding multiple comments to explain complicated logic.
-
-I learned that writing clean code is better than relying on comments to explain code that could have been written more clearly.
-
-## 6. My Personal Reflections
-
-While researching comments and documentation, I learned that writing code is not just about completing a task or making an application work. It is also about making sure other developers can understand and maintain that code.
-
-As someone working in Software Quality Assurance, I understand the importance of clarity and consistency. When reviewing code, unclear logic and outdated comments can make it difficult to understand the expected behaviour and identify potential issues.
-
-I also realised that adding more comments does not necessarily make code better. Sometimes, improving variable names, simplifying conditions and breaking complicated functions into smaller parts can make a much bigger difference.
-
-Going forward, I will focus on writing meaningful comments that explain the reason behind complex logic rather than describing every line of code. I will also make sure documentation stays updated whenever functionality changes.
-
-This will help me improve my coding practices, collaborate more effectively with developers and contribute to better software quality.
-
-## Best Practices for Writing Comments and Documentation
-
-Good comments and documentation help other developers understand code, maintain it, and make changes confidently. Comments should be clear, concise, accurate, and useful.
-
-Best practices include:
-
-- **Explain why, not just what:** Comments should explain the reason behind a decision rather than repeat what the code already does.
-- **Use meaningful names:** Choose descriptive names for variables and functions so the code is easy to understand.
-- **Keep comments simple and clear:** Use straightforward language and avoid unnecessary technical details.
-- **Keep comments updated:** When the code changes, update or remove comments that are no longer accurate.
-- **Document important behaviour:** Explain business rules, assumptions, limitations, and edge cases that may not be obvious.
-- **Avoid unnecessary comments:** Too many comments can make code harder to read instead of improving clarity.
-
-## Example of Poorly Commented Code
-
-### Before: Unclear code and unnecessary comments
-
-```javascript
-// Calculate something
+// Calculates something
 function calc(a, b, c) {
-    // Multiply a and b
+    // Multiply
     let x = a * b;
 
-    // Subtract c
+    // Subtract
     let y = x - c;
 
-    // Return the result
     return y;
 }
 ```
 
-The function name `calc` and parameter names `a`, `b`, and `c` do not clearly explain the purpose of the function. The comments only repeat what the code is doing and do not provide any meaningful information.
+### What is wrong with this example?
 
-### After: Improved code with meaningful names
+- The function name `calc` does not explain what the function calculates.
+- The parameters `a`, `b`, and `c` do not describe the information they represent.
+- The comments "Multiply" and "Subtract" only repeat what the code is already doing.
+- There is no explanation of the actual purpose of the calculation.
+
+### After: Improved Code with Meaningful Names and Comments
 
 ```javascript
+/**
+ * Calculates the total profit from product sales.
+ *
+ * @param {number} sellingPrice - Price of one product.
+ * @param {number} quantity - Number of products sold.
+ * @param {number} totalCost - Total cost of the products sold.
+ * @returns {number} The total profit from the sales.
+ */
 function calculateProfit(sellingPrice, quantity, totalCost) {
+    // Calculate the total revenue generated from product sales.
     const totalRevenue = sellingPrice * quantity;
+
+    // Subtract the total cost to determine the actual profit.
     const profit = totalRevenue - totalCost;
 
     return profit;
 }
 ```
 
-The improved version uses descriptive function and variable names, making the purpose of the code easier to understand. The unnecessary comments have been removed because the code now explains itself.
+### What improved?
 
-## When Should You Add Comments?
+- The function name `calculateProfit` clearly explains its purpose.
+- Meaningful parameter names make the inputs easier to understand.
+- The documentation explains what the function does, its parameters, and its return value.
+- The inline comments explain the intention behind the calculations rather than simply repeating the code.
+- Descriptive variable names make the implementation easier to read and maintain.
 
-I should add comments when the reason behind the code is not obvious from the implementation. Comments are useful for explaining why a particular approach was chosen, documenting important business rules, or describing unusual edge cases. For example, I might explain why a specific validation is required or why a function handles a particular situation differently.
+For example, if the selling price is $50, the quantity is 10, and the total cost is $300, the function calculates:
 
-## When Should You Avoid Comments and Improve the Code Instead?
+- Total revenue = $50 × 10 = $500
+- Total profit = $500 − $300 = $200
 
-I should avoid comments that simply repeat what the code is doing. Instead, I should use clear variable and function names, break large functions into smaller ones, and simplify complicated logic. If I need several comments to explain a simple function, I should consider improving the code so that it is easier to understand without extra explanation.
+This example shows that good variable names and meaningful comments work together to improve code readability.
 
-## Conclusion
+## 4. When Should You Add Comments?
 
-Good comments and documentation are important parts of clean code. They help developers understand complex logic, technical decisions and the expected behaviour of an application. My main takeaway is: Write code that explains itself, and add comments only when additional context is needed.
+I should add comments when the code contains complex logic, business rules, or decisions that are not immediately clear from reading the implementation.
 
-## Reflection
+Comments are also useful when explaining why a particular approach was chosen, documenting important limitations, or warning developers about something that should not be changed without understanding its impact.
 
-This task helped me understand that comments are not a replacement for clean code. I learned that meaningful names and simple logic can make code easier to maintain, while useful comments should provide additional context that the code cannot explain on its own. In future projects, I will focus on writing readable code first and adding comments only when they provide value to other developers.
+For example, if a system skips certain records because of a specific business requirement, a comment can explain why those records are excluded.
+
+```javascript
+// Skip inactive customers because only active accounts
+// are eligible for the monthly billing process.
+if (!customer.isActive) {
+    continue;
+}
+```
+
+This comment explains the business reason behind the condition rather than repeating what the code does.
+
+## 5. When Should You Avoid Comments and Improve the Code Instead?
+
+I should avoid adding comments when they simply describe something that is already obvious from the code. Instead, I should improve the code by using meaningful variable names, clear function names, and simpler logic.
+
+For example, instead of writing:
+
+```javascript
+// Check if the user is old enough
+if (age >= 18) {
+    // Allow access
+}
+```
+
+I can make the code clearer by using a descriptive variable:
+
+```javascript
+const isEligibleForAccess = age >= 18;
+
+if (isEligibleForAccess) {
+    // Grant access
+}
+```
+
+The improved version is easier to understand without needing comments that repeat the implementation.
+
+I learned that comments should add information that the code cannot communicate clearly on its own. If I need several comments to explain a simple function, I should first consider whether I can simplify or restructure the code.
+
+## 6. My Key Learnings
+
+Through this task, I learned that writing clean code is not only about choosing the correct logic but also about making the implementation understandable for other developers.
+
+I also understood that comments are most useful when they explain the reason behind a decision, complex behaviour, or business requirement. They should not replace clear code or meaningful naming.
+
+As a QA professional, I believe readable code and useful documentation also make testing easier because developers and testers can understand the expected behaviour, identify potential issues, and maintain the application more effectively.
+
+Going forward, I will focus on writing self-explanatory code, adding meaningful comments where necessary, and keeping documentation accurate and up to date.
 
 
 # Clean Code: Error Handling and Edge Cases
