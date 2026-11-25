@@ -1043,23 +1043,6 @@ Using Guard Clauses also makes the code more readable because invalid conditions
 
 This task helped me understand that writing reliable code means thinking about both successful scenarios and possible failures. As a QA professional, I also understand how important it is to test invalid inputs and edge cases to make sure the application behaves as expected.
 
-## 6. Commit and Push Changes to GitHub
-
-After completing the refactoring and updating this documentation, I reviewed the changes and prepared them for submission to GitHub.
-
-I used Git to stage, commit, and push the changes to the repository.
-
-The purpose of this step was to keep the code changes and documentation version-controlled and make the completed task available for review.
-
-### Git Commands
-
-```bash
-git status
-git add .
-git commit -m "Improve error handling and edge case validation"
-git push
-```
-
 ## Conclusion
 
 This task helped me improve my understanding of clean code practices, especially error handling, input validation, and Guard Clauses. I learned that handling errors properly makes code more readable, maintainable, and reliable. It also helps prevent unexpected behaviour and makes it easier for developers and QA engineers to identify and resolve issues.
