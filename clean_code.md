@@ -1043,6 +1043,20 @@ Using Guard Clauses also makes the code more readable because invalid conditions
 
 This task helped me understand that writing reliable code means thinking about both successful scenarios and possible failures. As a QA professional, I also understand how important it is to test invalid inputs and edge cases to make sure the application behaves as expected.
 
+## Existing Function Selected
+
+For this task, I reviewed the existing codebase and selected the function `[Actual Function Name]` from `[File Name]` to examine its error handling and input validation.
+
+The `checkUser(user)` function used in my Guard Clause refactoring was created as an illustrative example to demonstrate how nested `if/else` statements can be simplified using early returns. It was not an existing function from the project.
+
+## Reflection: How Error Handling Improves Reliability
+
+Handling errors and edge cases makes software more reliable because it helps prevent unexpected behaviour and application crashes when invalid or unexpected inputs are received.
+
+By validating inputs before processing them, the application can handle situations such as missing values, null inputs, empty strings and invalid data more safely. Meaningful error messages also make it easier for developers to understand what went wrong and troubleshoot problems.
+
+Using Guard Clauses and early returns improves code readability by handling invalid conditions first, reducing unnecessary nested conditions and making the code easier to maintain. Overall, good error handling helps create more predictable, stable and maintainable software.
+
 ## Conclusion
 
 This task helped me improve my understanding of clean code practices, especially error handling, input validation, and Guard Clauses. I learned that handling errors properly makes code more readable, maintainable, and reliable. It also helps prevent unexpected behaviour and makes it easier for developers and QA engineers to identify and resolve issues.
