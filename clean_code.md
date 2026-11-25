@@ -949,3 +949,117 @@ Good comments and documentation are important parts of clean code. They help dev
 ## Reflection
 
 This task helped me understand that comments are not a replacement for clean code. I learned that meaningful names and simple logic can make code easier to maintain, while useful comments should provide additional context that the code cannot explain on its own. In future projects, I will focus on writing readable code first and adding comments only when they provide value to other developers.
+
+
+# Clean Code: Error Handling and Edge Cases
+
+## 1. Research: Strategies for Handling Errors and Edge Cases
+
+While working on this task, I learned that proper error handling is an important part of writing clean, reliable, and maintainable code. A function should not only work with valid inputs but should also handle unexpected situations safely.
+
+Some strategies I learned include:
+
+### Guard Clauses
+
+Guard Clauses are used to check invalid inputs or unexpected conditions at the beginning of a function. If a condition is not valid, the function returns early or throws an appropriate error.
+
+This helps avoid unnecessary nested `if` statements and makes the code easier to read.
+
+For example:
+
+```javascript
+function calculateTotal(price, quantity) {
+  if (price < 0) {
+    throw new Error("Price cannot be negative");
+  }
+
+  if (quantity <= 0) {
+    throw new Error("Quantity must be greater than zero");
+  }
+
+  return price * quantity;
+}
+```
+
+### Input Validation
+
+Before processing data, I should check whether the input is valid and in the expected format. For example, checking whether a value is missing, whether a number is negative, or whether a string is empty.
+
+### Handling Errors Properly
+
+Errors should be handled in a meaningful way instead of being ignored. Depending on the situation, I can use `try...catch`, return an appropriate error message, or throw an error that can be handled by the calling function.
+
+### Handling Edge Cases
+
+Edge cases are situations that may not happen frequently but can cause unexpected behaviour. Examples include:
+
+- Empty or missing input
+- Null or undefined values
+- Negative numbers
+- Unexpected data types
+- Very large or very small values
+- Empty arrays or strings
+
+Considering these cases helps prevent unexpected crashes and incorrect results.
+
+## 2. Find an Existing Function with Improper Error Handling
+
+I reviewed the existing code and identified a function that did not properly validate its inputs or handle unexpected situations.
+
+The original function could produce incorrect results or fail when it received invalid or unexpected data. It did not clearly explain what went wrong, which made the function difficult to debug and maintain.
+
+I selected this function for refactoring to improve its input validation and error handling.
+
+## 3. Refactor the Function
+
+I refactored the function by adding appropriate validation and error handling.
+
+The main improvements included:
+
+- Adding Guard Clauses to handle invalid inputs early.
+- Checking for missing or unexpected values.
+- Preventing the function from continuing when the input is invalid.
+- Providing clear and meaningful error messages.
+- Simplifying the function's logic to make it easier to understand.
+- Ensuring that valid inputs continue to produce the expected results.
+
+After refactoring, the function became easier to read and more reliable when handling unexpected situations.
+
+## 4. Reflection: What Was the Issue with the Original Code?
+
+The main issue with the original code was that it did not properly handle invalid inputs and unexpected conditions. It assumed that the input would always be correct, which could lead to incorrect results or unexpected errors.
+
+The function also lacked clear validation and meaningful error messages. This made it harder to identify the cause of a problem when something went wrong.
+
+By refactoring the function, I learned that clean code should not only handle the expected scenario but should also consider what could go wrong.
+
+## 5. Reflection: How Does Error Handling Improve Reliability?
+
+Proper error handling improves reliability by allowing the application to respond safely when something unexpected happens.
+
+It helps prevent invalid data from being processed, reduces unexpected failures, and makes debugging easier by providing clear information about the problem.
+
+Using Guard Clauses also makes the code more readable because invalid conditions are handled at the beginning of the function instead of being mixed with the main logic.
+
+This task helped me understand that writing reliable code means thinking about both successful scenarios and possible failures. As a QA professional, I also understand how important it is to test invalid inputs and edge cases to make sure the application behaves as expected.
+
+## 6. Commit and Push Changes to GitHub
+
+After completing the refactoring and updating this documentation, I reviewed the changes and prepared them for submission to GitHub.
+
+I used Git to stage, commit, and push the changes to the repository.
+
+The purpose of this step was to keep the code changes and documentation version-controlled and make the completed task available for review.
+
+### Git Commands
+
+```bash
+git status
+git add .
+git commit -m "Improve error handling and edge case validation"
+git push
+```
+
+## Conclusion
+
+This task helped me improve my understanding of clean code practices, especially error handling, input validation, and Guard Clauses. I learned that handling errors properly makes code more readable, maintainable, and reliable. It also helps prevent unexpected behaviour and makes it easier for developers and QA engineers to identify and resolve issues.
