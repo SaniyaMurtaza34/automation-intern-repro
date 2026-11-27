@@ -1,19 +1,32 @@
 
-from pywinauto.application import Application
+from pywinauto import Application
+import time
 
-# Launch Windows Notepad
-app = Application(backend="uia").start("notepad.exe")
 
-# Connect to the Notepad window
-window = app.window(title_re=".*Notepad.*")
+def test_launch_notepad():
 
-# Wait until the window is visible
-window.wait("visible", timeout=10)
+    # Launch Notepad
+    app = Application(backend="uia").start("notepad.exe")
 
-# Enter text into Notepad
-window.type_keys("Hello from Pywinauto!", with_spaces=True)
+    # Allow Windows time to open Notepad
+    time.sleep(5)
 
-# Verify that the window is visible
-assert window.is_visible()
+    # Get the top-level application window
+    window = app.top_window()
 
-print("Notepad automation test passed!")
+    # Wait for the window to become visible
+    window.wait("visible", timeout=20)
+
+    # Display the window title
+    print("Window title:", window.window_text())
+
+    # Display available UI elements
+    window.print_control_identifiers()
+
+    # Verify that Notepad is visible
+    assert window.is_visible()
+
+    print("Notepad launched successfully!")
+
+    # Close Notepad
+    app.kill()
