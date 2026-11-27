@@ -533,3 +533,30 @@ Another important concept I learned is flaky testing. I understood why explicit 
 
 ---
 
+## Practical Exercise: Running Tests Locally to Simulate CI Execution
+
+I practised running automated tests locally using Pytest through the VS Code terminal.
+
+First, I created a simple test case and executed it using:
+
+```bash
+python -m pytest tests/ -v
+```
+
+The test runner displayed the execution results, showing whether the test passed or failed.
+
+I also explored generating a test report using:
+
+```bash
+python -m pytest tests/ -v --junitxml=test-results.xml
+```
+
+This generates an XML report that can be used by CI/CD tools to display automated test results.
+
+I learned that Pywinauto requires an interactive Windows desktop session because it automates native Windows GUI applications. Therefore, it cannot run in true headless mode like Playwright.
+
+I also explored how Playwright can execute browser tests in headless mode without displaying a browser window.
+
+This exercise helped me understand how automated tests can be executed through a terminal and how the same testing commands can be used in a CI/CD pipeline.
+
+**Conclusion:** I understand how to simulate CI-style test execution locally and the difference between headless browser automation and Windows desktop GUI automation.
